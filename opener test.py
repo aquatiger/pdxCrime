@@ -1,6 +1,9 @@
 import csv
 from collections import Counter
 
+# use pandas, pandas.read_csv(skipinitialspace, nrows=)
+# nrows is good for using only a part of the dataset
+
 CRIME_DIR = 'C:/Users/Roger/Documents/GitHub/pdxCrime/data/crime_incident_data_'
 
 def opener(crimeYear):
@@ -11,7 +14,7 @@ def opener(crimeYear):
 ##       print(commonest)
        for row in opened:
            headering.append(row)
-           print(headering[0])
-    opened.close()
+           print(headering)
+#    file.close()
 
-opener('2011')
+opener('2014')
